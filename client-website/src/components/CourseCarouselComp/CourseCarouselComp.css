@@ -1,0 +1,147 @@
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-item {
+  padding: 10px; /* Add spacing between cards */
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 190px;
+  /* border-radius: 8px; */
+}
+
+.carousel-item-content {
+  padding: 5px 5px; /* Add top and bottom padding */
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.card-rating .MuiRating-root {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.card-rating span {
+  font-size: 1rem;
+}
+
+.card-pricee {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff0000;
+  display: flex;
+  flex-direction: row !important;
+  gap: 2px;
+  align-items: center !important;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+}
+
+.card-price span {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  margin-left: 10px;
+}
+
+.tooltip-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tooltip-description {
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  color: rgb(90, 90, 90);
+}
+
+.tooltip-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tooltip-rating .MuiRating-root {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.tooltip-rating span {
+  margin-left: 5px;
+}
+
+.tooltip-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.tooltip-price span {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  margin-left: 10px;
+}
+
+/* Customize slick dots */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #000; /* Change color of dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff0000; /* Change color of active dot */
+}
+
+/* Arrows */
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -50px;
+}
+
+.slick-next {
+  right: -50px;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: '';
+}
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .slick-prev, .slick-next {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .slick-prev {
+    left: -35px;
+  }
+  
+  .slick-next {
+    right: -35px;
+  }
+}

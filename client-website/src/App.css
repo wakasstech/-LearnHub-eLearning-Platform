@@ -1,0 +1,22 @@
+
+/* Targeting the enter button of Input.Search */
+.ant-input-search-button {
+  background-color: #0E162B; /* Background color */
+  border-color: #ffffff; /* Border color */
+  color: #ffffff; /* Text color */
+}
+
+/* Hover and focus styles for the enter button */
+.ant-input-search-button:hover,
+.ant-input-search-button:focus {
+  background-color: #0E162B; /* Background color on hover/focus */
+  border-color: #ffffff; /* Border color on hover/focus */
+}
+
+
+
+
+
+
+
+

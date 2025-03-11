@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.main-container {
+  min-height: 100vh;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.Course {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.secTtl {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.secBdy {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filters {
+  background-color: #fff;
+  padding: 16px;
+  margin-top: 23px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.time-info {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-bottom: 5px; /* Space between the time info and course outline */
+}
+
+.time-info svg {
+  margin-right: 5px; /* Space between icon and text */
+}
+.course-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+.course-card img {
+    transition: opacity 0.3s ease;
+  }
+  .course-card img:hover {
+    opacity: 0.9;
+  }
+.course-info {
+  padding: 16px;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.course-instructor {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 16px;
+}
+
+.course-rating {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.course-pricing {
+  display: flex;
+  align-items: center;
+}
+
+.course-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-right: 8px;
+}
+
+.course-original-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #888;
+}
+
+.custom-label {
+  font-weight: 600;
+}
+
+.custom-modal .ant-modal-title {
+  color: #0e162b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .course-card {
+    flex-direction: row;
+  }
+  .course-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}

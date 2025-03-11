@@ -1,0 +1,35 @@
+.imgBox {
+    width: 100%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hovImgBox {
+    display: flex; /* Changed from 'none' to 'flex' */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .hovImg {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+  }
+  .hovImg:hover  {
+    width: 80px;
+    height: 80px;
+  }
+
+  

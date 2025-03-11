@@ -1,0 +1,15 @@
+.react-player{
+    width: 100% !important;
+    
+    
+}
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .react-player{
+    height: 220px !important;
+    
+    
+}
+}
+
+/* HTML: <div class="loader"></div> */

@@ -1,0 +1,124 @@
+/* CategoryManagementPage.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category-box {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Added box-shadow */
+}
+
+.category-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-title {
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: #0E162B;
+}
+header h1 {
+  font-size: 16px;
+  font-weight: 800;
+  background-image: radial-gradient(circle, #0E162B, #0d214b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.category-description {
+  margin-bottom: 12px;
+}
+
+.subcategory-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.subcategory-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+ 
+}
+
+.subcategory-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 8px; /* To avoid scrollbar overlapping */
+}
+
+.sub-category {
+  border: 1px solid #b0beda;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  background-image: radial-gradient(circle, #6c8ed1, #6c8ed1);
+  color: white;
+  cursor: pointer;
+}
+
+.strong-color {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.add-category-button,
+.edit-category-button,
+.add-subcategory-button {
+  background: #0E162B;
+  color: white;
+  border: none;
+
+  border: none;
+
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-category-button:hover,
+.edit-category-button:hover,
+.add-subcategory-button:hover {
+  background: #36508a;
+}
+
+.add-category-button:focus,
+.edit-category-button:focus,
+.add-subcategory-button:focus {
+  outline: none;
+}
+
+.category-box {
+  margin-bottom: 24px;
+}
+
+.category-content {
+  padding: 8px;
+}
+
+.subcategory-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.subcategory-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.subcategory-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
